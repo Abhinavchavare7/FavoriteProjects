@@ -1,0 +1,98 @@
+*{
+    margin: 0;padding: 0;
+overflow: hidden;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url("https://media.istockphoto.com/photos/cyber-security-web-development-and-work-in-it-concept-picture-id1289411982?b=1&k=20&m=1289411982&s=170667a&w=0&h=0R3OXR4L6LOGphYA3sul4bWQwpGj_DSl05ENiP2kRZg=") no-repeat center; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    color: whitesmoke;
+    padding: 10px;
+    margin:  0 10px;
+text-align: center;
+
+}
+.btn{
+    padding: 8px 18px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.active.container{
+    filter: blur(4px);
+    transition: 0.5s linear;
+}
+.btn:hover,.pop-up:hover{
+    box-shadow: 2px 2px 4px whitesmoke;
+    background-color: orange;
+    scale: 1.02;
+}
+.pop-con{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 400px;
+    height: 250px;
+    transform: translate(-50%,-50%);
+    /* background-color: whitesmoke; */
+    padding: 30px;
+    box-sizing: border-box;
+    background: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjF8Nzc1NzE1fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px whitesmoke;
+    opacity: 1;
+    transition:  0.8s linear;
+  
+}
+h3{
+    color: whitesmoke;
+   margin: 5px 0;
+}
+label{
+    color: whitesmoke;
+   margin: 5px 0;
+   font-weight: 600;
+}
+input{
+    padding: 5px ;
+    margin: 2px 0;
+    outline: none;
+}
+.pop-up{
+    padding: 5px 0;
+    border: none;
+   background-color: lightpink;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.icontime{
+    position: absolute;
+    color: whitesmoke;
+    top: 10px ;
+    right: 20px;
+    font-size: 25px;
+}
+.active.pop-con{
+    visibility: hidden;
+    opacity: 0;
+    top: 30%;  
+     transition: all 0.8s linear;
+}
+.text{
+    color:white;
+    text-shadow: .2px .2px rgb(21, 20, 20);
+}

@@ -1,0 +1,74 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(106, 111, 253);
+   
+}
+h1{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px ;
+}
+
+h6{
+    padding: 10px;
+    margin: 5px;
+    color: #fff;
+}
+h1:hover{
+    scale: 1.1;
+    text-shadow: 1px 1px 4px rgb(0, 255, 0);
+}
+.instruments{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+button{
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  background: url("./snare.png") no-repeat center;
+  background-image: url("./tom.png");
+  background-size: contain;
+  border: none;
+  border: 2px ridge black;
+  color: rgb(202, 22, 22);
+  font-weight: 600;
+  letter-spacing: 3px;
+    font-size: 35px;
+box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.559);  background-color: rgb(113, 243, 243);
+border-radius: 25px;
+}
+button:hover{
+    scale: 1.1;
+    background-color: rgba(255, 213, 0, 0.658);
+}
+
+
+
+
+
+
+
+/* Media Query */
+@media(max-width:600px){
+    button{
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+      }
+}
